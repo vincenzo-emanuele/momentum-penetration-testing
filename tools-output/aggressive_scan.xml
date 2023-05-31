@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri May 26 08:11:39 2023 as: nmap -A -p- -oX aggressive_scan.xml 10.0.2.4 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oX aggressive_scan.xml 10.0.2.4" start="1685103099" startstr="Fri May 26 08:11:39 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.0.2.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685103100" endtime="1685103114"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.0.2.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="conn-refused" count="65533" proto="tcp" ports="1-21,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 5c8e2cccc1b03e7c0e2234d860314e62 (RSA)&#xa;  256 81fdc64c5a500a27ea833864b98bbdc1 (ECDSA)&#xa;  256 c18f87c1520927605f2e2de0080372c8 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCgY+ZHfSI8n4CS/wRyjcub7cHXCF/Lg9B1V5/ON1L6cGSGi/d2UZI7DBzQ+HFfbDAHaXC+LCAd1YP+DUMBZTFeXq92YvaBgdMKqwSPUV3xjwdjZ4CxtFFlBOmm+7FV3RiJTqMqyuHrMtm8HyCy6qCGspg7N68GrtqKjx4hpVV1g83OejNgndSX8lFFicAUgyyITwTFNmORt1Q1gRsCrlyIsgBmKFA5ILdc368qfQ1wkl5UuQIywCR5tBocCr9wjz/Kmnw2vL9nVkz7Rpgoy+PpauO79oT3KNJCY14Na3HlIMkfHFDgAah2faQ+KfZ6iwHEBhUCc/Ntf73/hvNLhvMJ</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">5c8e2cccc1b03e7c0e2234d860314e62</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAvETSAbSxSsiZsuMSlYBMPl4mnydOMukiWu7qTYt5jU7pkBdEyF1bT2MUBPAHf2Yr7LKAnmTUwmG8d3fPwK0A0=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">81fdc64c5a500a27ea833864b98bbdc1</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIDyxkKiZS8Udvbmkf2wuWsUyotMD+/KKuHKbFTKRcttA</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">c18f87c1520927605f2e2de0080372c8</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-title" output="Momentum | Index "><elem key="title">Momentum | Index </elem>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script></port>
+</ports>
+<times srtt="1064" rttvar="654" to="100000"/>
+</host>
+<runstats><finished time="1685103114" timestr="Fri May 26 08:11:54 2023" summary="Nmap done at Fri May 26 08:11:54 2023; 1 IP address (1 host up) scanned in 15.12 seconds" elapsed="15.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
