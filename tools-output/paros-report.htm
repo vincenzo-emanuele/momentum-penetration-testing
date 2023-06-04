@@ -1,0 +1,342 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Paros Scanning Report</title>
+    </head>
+    <body text="#000000">
+        <p>
+            <strong>Paros Scanning Report</strong>
+        </p>
+        <p>
+Report generated at Fri, 2 Jun 2023 08:43:40.
+
+
+
+
+</p>
+        <p>
+            <strong>Summary of Alerts</strong>
+        </p>
+        <table width="45%" border="0">
+            <tr bgcolor="#666666">
+                <td width="45%" height="24"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Risk 
+      Level</font></strong></td><td width="55%" align="center"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Number 
+      of Alerts</font></strong></td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#high">High</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">0</font></td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#medium">Medium</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">3</font></td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#low">Low</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">1</font></td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#info">Informational</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">0</font></td>
+            </tr>
+        </table>
+        <p></p>
+        <p></p>
+        <p>
+            <strong>Alert Detail</strong>
+        </p>
+        <p></p>
+        <table width="100%" border="0">
+              
+  
+            <tr bgcolor="green" height="24">
+                <a name="low"></a><td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Medium (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Directory browsing</font></strong></td>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Description</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">It is possible to view the directory listing.  Directory listing may reveal hidden scripts, include files , backup source files etc which be accessed to read sensitive information.</p>
+                    </font></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/js/</font></td>
+            </tr>
+              
+  
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/js/</font></td>
+            </tr>
+              
+  
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/js/</font></td>
+            </tr>
+              
+  
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Solution</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Disable directory browsing.  If this is required, make sure the listed files does not induce risks.</p>
+                    </font></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Reference</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">For IIS, turn off directory browsing.</p>
+                        <p align="justify">For Apache, use the 'Options -Indexes' directive to disable indexes in directory or via .htaccess:</p>
+                        <p align="justify">. http://httpd.apache.org/docs/mod/core.html#options</p>
+                        <p align="justify">. http://alamo.satlug.org/pipermail/satlug/2002-February/000053.html</p>
+                        <p align="justify">. or create a default index.html for each directory.</p>
+                    </font></td>
+            </tr>
+            
+        </table>
+        <p></p>
+        <table width="100%" border="0">
+              
+  
+            <tr bgcolor="yellow" height="24">
+                <td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"><a name="medium"></a>Medium (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Cross site scripting</font></strong></td>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Description</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Cross-site scripting or HTML injection is possible.  Malicious script may be injected into the browser which appeared to be genuine content from the original site.  These scripts can be used to execute arbitrary code or steal customer sensitive information such as user password or cookies.</p>
+                        <p align="justify">Very often this is in the form of a hyperlink with the injected script embeded in the query strings.  However, XSS is possible via FORM POST data, cookies, user data sent from another user or shared data retrieved from database.</p>
+                        <p align="justify">Currently this check does not verify XSS from cookie or database.  They should be checked manually if the application retrieve database records from another user's input.</p>
+                    </font></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/opus-details.php?id=%3CSCRIPT%3Ealert(%22Paros%22);%3C/SCRIPT%3E</font></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">Parameter</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">id=&lt;SCRIPT&gt;alert("Paros");&lt;/SCRIPT&gt;</font></td>
+            </tr>
+              
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Solution</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Do not trust client side input even if there is client side validation.  Sanitize potentially danger characters in the server side.  Very often filtering the &lt;, &gt;, " characters prevented injected script to be executed in most cases.  However, sometimes other danger meta-characters such as ' , (, ), /, &amp;, ; etc are also needed.</p>
+                        <p align="justify">In addition (or if these characters are needed), HTML encode meta-characters in the response.  For example, encode &lt; as &amp;lt;</p>
+                        <p align="justify"></p>
+                    </font></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Reference</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">
+                            <ul>
+                                <li>The OWASP guide at http://www.owasp.org/documentation/guide</li>
+                                <li>http://www.technicalinfo.net/papers/CSS.html</li>
+                                <li>http://www.cgisecurity.org/articles/xss-faq.shtml</li>
+                                <li>http://www.cert.org/tech_tips/malicious_code_FAQ.html</li>
+                                <li>http://sandsprite.com/Sleuth/papers/RealWorld_XSS_1.html</li>
+                            </ul>
+                        </p>
+                    </font></td>
+            </tr>
+            
+        </table>
+        <p></p>
+        <table width="100%" border="0">
+              
+  
+            <tr bgcolor="yellow" height="24">
+                <td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"><a name="medium"></a>Medium (Suspicious)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Lotus Domino default files</font></strong></td>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Description</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Lotus Domino default files found.</p>
+                    </font></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/?OpenServer</font></td>
+            </tr>
+              
+  
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/?Open</font></td>
+            </tr>
+              
+  
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Solution</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Remove default files.</p>
+                    </font></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Reference</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify"></p>
+                    </font></td>
+            </tr>
+            
+        </table>
+        <p></p>
+        <table width="100%" border="0">
+              
+  
+            <tr bgcolor="green" height="24">
+                <a name="low"></a><td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Private IP disclosure</font></strong></td>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Description</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Private IP such as 10.x.x.x, 172.x.x.x, 192.168.x.x is found in the HTTP response body.  This can be used in exploits on internal system.</p>
+                    </font></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/js/?C=S;O=D</font></td>
+            </tr>
+              
+  
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">Other information</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">10.0.2.4</font></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://10.0.2.4/js/</font></td>
+            </tr>
+              
+  
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%">
+                    <blockquote>
+                        <font size="2" face="Arial, Helvetica, sans-serif">Other information</font>
+                    </blockquote>
+                </td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">10.0.2.4</font></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Solution</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify">Remove the private IP address from the HTTP response body.  For comments, use jsp/asp comment instead of HTML/javascript comment which can be seen by client browsers.</p>
+                    </font></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8" valign="top">
+                <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p>Reference</p>
+                    </font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+                        <p align="justify"></p>
+                    </font></td>
+            </tr>
+            
+        </table>
+    </body>
+</html>
