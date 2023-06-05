@@ -1,0 +1,2 @@
+address	mac	state	address	address6	name	purpose	info	os_name	os_flavor	os_sp	os_lang	os_match	created_at	updated_at
+10.0.2.4	08:00:27:0f:15:fd	alive	10.0.2.4			server		Linux		4.X				1685713067863

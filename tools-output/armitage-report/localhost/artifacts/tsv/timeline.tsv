@@ -1,0 +1,7 @@
+source	username	created_at	info
+10.0.2.15		1685711478658	started a scan: nmap --min-hostgroup 96 -sS -n -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 10.0.2.4
+10.0.2.15		1685711551527	started a scan: nmap --min-hostgroup 96 -T4 -n -sn 10.0.2.4
+10.0.2.15		1685711567712	launched msf scans at: 10.0.2.4
+10.0.2.15		1685711842093	started a scan: nmap --min-hostgroup 96 -p 1-65535 -n -T4 -A -v 10.0.2.4
+10.0.2.15		1685711885242	started a scan: nmap --min-hostgroup 96 -sS -n -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 10.0.2.4
+10.0.2.15		1685712489167	has given up and launched the hail mary!

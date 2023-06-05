@@ -1,0 +1,22 @@
+<services>
+	<entry>
+		<host>10.0.2.4</host>
+		<port>80</port>
+		<state></state>
+		<proto>tcp</proto>
+		<name>http</name>
+		<created_at></created_at>
+		<updated_at>1685711860915</updated_at>
+		<info><![CDATA[Apache httpd 2.4.38 (Debian)]]></info>
+	</entry>
+	<entry>
+		<host>10.0.2.4</host>
+		<port>22</port>
+		<state></state>
+		<proto>tcp</proto>
+		<name>ssh</name>
+		<created_at></created_at>
+		<updated_at>1685711858619</updated_at>
+		<info><![CDATA[OpenSSH 7.9p1 Debian 10+deb10u2 protocol 2.0]]></info>
+	</entry>
+</services>

@@ -1,0 +1,19 @@
+<hosts>
+	<entry>
+		<address>10.0.2.4</address>
+		<mac>08:00:27:0f:15:fd</mac>
+		<state>alive</state>
+		<address>10.0.2.4</address>
+		<address6></address6>
+		<name></name>
+		<purpose>server</purpose>
+		<info><![CDATA[]]></info>
+		<os_name>Linux</os_name>
+		<os_flavor></os_flavor>
+		<os_sp>4.X</os_sp>
+		<os_lang></os_lang>
+		<os_match></os_match>
+		<created_at></created_at>
+		<updated_at>1685713067863</updated_at>
+	</entry>
+</hosts>
